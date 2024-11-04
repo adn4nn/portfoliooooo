@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "Poppins", serif;
+    font-weight: 450;
+    font-style: normal; */
+}
+.logo{
+    
+    width: 100px;
+    height: 30px;
+    margin-top: 35px;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
+
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.head {
+    padding: 20px;          
+    display: flex;
+    justify-content: space-between;
+   
+}
+.navbar{
+    padding: 40px;
+}
+.navbar>a{
+    margin-right: 40px;
+    font-size: 30px;
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+    transition:font-size .08s;
+
+}
+
+.navbar a:hover{
+    color:#b16e29 ;
+    font-size: 35px;
+    
+}
+
+
+#home {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Grid layout */
+   /* height: 100vh;   */
+    margin-top: 40px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: top;
+    padding: 20px; /* Add some padding */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    margin-left: 80px;
+    margin-top: 90px;
+    font-size: 24px;
+    width: 100%;
+}
+.image2 img {
+    width: 90%;   /* Set a fixed width */
+    height: auto;   /* Maintain aspect ratio */
+    max-height: auto;         /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    display: flex;
+}
+/* #home{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+} */
+
+/* .image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .intro{
+    margin-left: 40px;
+    margin-top: 100px;
+    font-size: 28px;
+} */
+
+
+.intro:hover {
+    transform: scale(1.05); 
+}
+
+.image2:hover img {
+    transform: scale(1.07);
+}
+
+#username{
+    color: #b16e29;
+}
+#about {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: 50% 50%; /* Define two columns */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add some padding */
+    margin-top: 90px; /* Match the top margin */
+}
+
+.aboutimage {
+    margin-left: 0px; /* Space from the left */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.aboutimage img {
+    width: 900px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.aboutimage:hover img {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.aboutinfo {
+    margin-left: 20px; /* Space between image and text */
+    font-size: 23px; /* Font size */
+    line-height: 1.6; /* Improve readability */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    margin-top: 120px;
+    width: 90%;
+}
+
+.aboutinfo:hover {
+    transform: scale(1.03); /* Slightly scale up on hover */
+}
+#aboutspan{
+    color: #b16e29;
+}
+/* #list{
+    margin-left: 20px;
+} */
+ .aboutinfo>p{
+    text-align: justify;
+ }
+
+ .skillimage img{
+    width: 700px;
+    height: auto;
+  
+ }
+ 
+
+
+
+
+.card-container {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center; /* Space out the cards */
+    gap: 230px; /* Reduced space between cards */
+    padding: 30px; /* Optional: padding around the container */
+}
+
+/* Individual flip card styling */
+.flipcard {
+    perspective: 1000px; /* For 3D effect */
+    width: 320px; /* Increased width for each flip card */
+    height: 420px; /* Increased height for each flip card */
+}
+
+.flipinner {
+    position: relative;
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flipfront, .flipback {
+    position: absolute;
+    width: 100%; /* Ensure both sides take full width */
+    height: 100%; /* Ensure both sides take full height */
+    backface-visibility: hidden; /* Hide the back face */
+}
+
+.flipfront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipfront img {
+    max-width: 100%; /* Make image responsive */
+    max-height: 100%; /* Make image responsive */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.flipback {
+    background-color: #ffffff; /* Background color */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    
+}
+
+
+.flipcard:hover .flipinner {
+    transform: rotateY(180deg);
+}
+.flipback ul{
+    color: rgb(255, 102, 0);
+    font-size: 20px;
+}
+#skills {
+    margin-top: 60px; /* Adjust as needed */
+    padding: 20px;
+    text-align: center; /* Center the heading */
+}
+
+#skills h2 {
+    font-size: 50px; /* Adjust size as needed */
+     /* Or any color you prefer */
+    margin-bottom: 0px; /* Space below the heading */
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+#skills p {
+    font-family: "Poppins", serif;
+    font-weight: 400; 
+    font-style: normal; 
+    color: rgb(0, 0, 0); 
+    font-size: 26px;
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+#skillss{
+    color:rgb(222,106,11);
+    font-size: 35px;
+}
+
+
+
+
+.flipback ul {
+    color: rgb(255, 102, 0); /* Keep your desired color */
+    font-size: 19px; /* Adjust the font size here */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.flipback ul li {
+    margin-bottom: 7px; /* Add space between list items */
+}
+
+
+
+
+
+
+#contact {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.contact-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out content */
+    align-items: center; /* Center items vertically */
+}
+
+.contact-form {
+    width: 50%; /* Adjust width as needed */
+    text-align: center; /* Center text */
+}
+
+.contact-image {
+    width: 40%; /* Adjust width as needed */
+}
+
+.contact-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 80%; /* Adjust width as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b16e29; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #9a5a23; /* Darker shade on hover */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.social-icons a {
+    margin: 0 15px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    color: #b16e29; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s, color 0.3s; /* Smooth transform and color change */
+}
+
+.social-icons a:hover {
+    color: #ff5733; /* Change color on hover */
+    transform: translateY(-5px); /* Lift the icon up slightly */
+}
+
+html {
+    scroll-behavior: smooth;
+}
